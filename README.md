@@ -1,5 +1,16 @@
 # Edrys Station-Stream Module
 
+> [!WARNING]
+> **Deprecated.** This module is superseded by
+> [module-streaming](https://github.com/edrys-labs/module-streaming), which has the same settings and camera picker,
+> and adds stream quality, several streams per station (`streamName`), a websocket relay for networks that block
+> peer-to-peer, and automatic recovery when the camera is lost. This module only gets critical fixes.
+>
+> **Switching:** add `https://edrys-labs.github.io/module-streaming/index.html` instead. `video`, `audio`, `mirrorX`,
+> `mirrorY` and `rotate` keep their names.
+>
+> - `audio` is **off by default** there: set it to `true` (or tick it in the settings form) to keep streaming the microphone.
+
 This module will allow a station to send a video and or audio stream to all connected users via a direct WebRTC connection.
 
 Import the module via:
